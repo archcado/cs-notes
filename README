@@ -120,3 +120,117 @@ Move swapping.md 至 CH7_Memory_作業系統/
 ```
 
 是否需要我幫你建立 commit message 樣板（可貼在 README 中當範例）？
+你目前畫面中確實沒有任何檔案顯示在 `CHANGES` 區塊下方，這表示：
+
+> 你**沒有實際修改任何檔案**，或者你修改了但還沒儲存。
+
+這也是為什麼你無法「Stage（暫存）」的原因：沒有變更內容可提交。
+
+---
+
+## ✅ 解決方法：請先做出實際修改並儲存
+
+### 🔧 示範流程：
+
+1. 在 `README.md` 裡新增一行，例如：
+
+   ```markdown
+   > 本筆記由 Visual Studio Code 編輯與同步
+   ```
+
+2. **按 `Ctrl + S` 儲存**
+
+3. 然後再點開左側 Source Control（🔁）圖示
+
+這時你會看到：
+
+```
+CHANGES
+README.md
+```
+
+並在 `README.md` 右側出現一個 `+` 按鈕，表示你可以「**Stage this file**」。
+
+---
+
+## ✅ 如何 Stage（暫存）檔案：
+✅ 【1】你確定真的「儲存」了檔案嗎？
+修改完檔案後，請 一定要按 Ctrl + S 儲存。
+
+若還沒儲存，Git 和 VS Code 不會偵測成變更
+### 方法一：滑鼠操作
+
+* 在 `README.md` 檔案上方或右側出現 `+` 按鈕，點一下即可 **Stage**
+* 檔案會從 `CHANGES` 移動到 `STAGED CHANGES`
+
+### 方法二：右鍵選單
+
+* 在 `README.md` 上點右鍵 → 選擇 `Stage Changes`
+
+---
+
+## ✅ Stage 成功後
+
+你就會看到 `✓ Commit` 變成 **可按**，然後就可以正常提交與 push：
+
+1. 撰寫 commit message
+2. 點 `✓ Commit`
+3. 最後執行 push（左下角會出現 push 按鈕，或手動打指令）
+
+你目前畫面中確實沒有任何檔案顯示在 `CHANGES` 區塊下方，這表示：
+
+> 你**沒有實際修改任何檔案**，或者你修改了但還沒儲存。
+
+這也是為什麼你無法「Stage（暫存）」的原因：沒有變更內容可提交。
+
+---
+
+## ✅ 解決方法：請先做出實際修改並儲存
+
+### 🔧 示範流程：
+
+1. 在 `README.md` 裡新增一行，例如：
+
+   ```markdown
+   > 本筆記由 Visual Studio Code 編輯與同步
+   ```
+
+2. **按 `Ctrl + S` 儲存**
+
+3. 然後再點開左側 Source Control（🔁）圖示
+
+這時你會看到：
+
+```
+CHANGES
+README.md
+```
+
+並在 `README.md` 右側出現一個 `+` 按鈕，表示你可以「**Stage this file**」。
+
+---
+
+## ✅ 如何 Stage（暫存）檔案：
+
+### 方法一：滑鼠操作
+
+* 在 `README.md` 檔案上方或右側出現 `+` 按鈕，點一下即可 **Stage**
+* 檔案會從 `CHANGES` 移動到 `STAGED CHANGES`
+
+### 方法二：右鍵選單
+
+* 在 `README.md` 上點右鍵 → 選擇 `Stage Changes`
+
+---
+
+## ✅ Stage 成功後
+
+你就會看到 `✓ Commit` 變成 **可按**，然後就可以正常提交與 push：
+
+1. 撰寫 commit message
+2. 點 `✓ Commit`
+3. 最後執行 push（左下角會出現 push 按鈕，或手動打指令）
+
+---
+
+### 如果你需要我幫你把這整段「怎麼觸發 CHANGES → Stage → Commit → Push」的圖文教學整理成 `.md` 文件放入專案，方便未來查閱，我可以幫你馬上建立。是否需要？
